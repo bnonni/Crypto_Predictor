@@ -1,0 +1,43 @@
+
+
+
+
+6. Conclusions (describe major conclusions objectively, and plan future work)
+
+
+
+split [Traditional features, Technical Features] into train, test datasets
+
+scale feature training and feature testing data using MinMaxScalar
+
+reshape scaled training and testing data into 3D datasets
+
+create LSTM model:
+	add 5 LSTM layers, 200 nodes each
+	add 5 Dropout layers, 20% dropout
+	add 1 LSTM layer, 200 nodes
+	add 1 Dropout layer, 50%
+	add 1 Dense output layer, 1 node
+
+
+High
+Low
+Volume
+RSI
+ADL
+OBV
+ADL_slope
+OBV_slope
+
+
+
+
+
+High, Prices
+Volumes, Prices
+Low, Prices
+RSI, Prices
+ADL, Prices
+OBV, Prices
+ADL_slope, Prices
+OBV_slope, Prices

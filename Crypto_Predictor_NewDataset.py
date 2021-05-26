@@ -11,13 +11,15 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import gc
 import os
-from sys import *
+import sys
+from sys import argv
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 gc.collect()
 
 if(len(argv) > 1):
     if(argv[1]  == 'y'):
         updateCSV()
+        sys.exit(0)
 else:
     pass
 
